@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/etacs.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Survey for ETACS Project" />
+    <title>ETACS Survey Part 2</title>
+
+    <style>
+      p::before {
+        content: "Question #";
+      }
+      p {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      legend {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+<header>
+
+</header>
+
+<main>
+  <form id="survey-form" action="https://formsubmit.co/slatkovs.david@gmail.com" method="POST">
+  <section role="region" aria-labelledby="person-info">
+    <div class="info">
+      <label for="date">Date &nbsp;</D><input type="date" name="date" required>
+      </label>
+    </div>
+    <h1 id="person-info">PERSONAL INFORMATION</h1>
+    <div>
+      <label for="name">Name: &nbsp;<input type="text" placeholder="David S." name="name" required></label>
+    </div>
+    <br>
+    <div>
+      <label for="unit-name">Unit/Company: &nbsp; &nbsp; <input type="text" placeholder="Eng Regiment Sered" name="unit" required></label>
+    </div>
+    <br>
+    <div>
+      <label for="nationality">Nationality: &nbsp; &nbsp; <input type="text" placeholder="Slovakia" name="nationality" required></label>
+    </div>
+    <br/>
+    <legend>What is your specialty?</legend>
+    <ul class="Proffession">
+      <li>
+        <label for="q0-a1">
+          <input type="radio" id="q0-a1" name="q0" value="EOD Operator" required> EOD Operator
+        </label>
+      </li>
+      <li>
+        <label for="q0-a2">
+          <input type="radio" id="q0-a2" name="q0" value="EOD Intructor"> EOD Instructor
+        </label>
+      </li>
+      <li>
+        <label for="q0-a3">
+          <input type="radio" id="q0-a3" name="q0" value="Other"> Other: &nbsp;<textarea style="width: 180px" name="other" id="other" cols="20" rows="1" placeholder="e.g. civilian / retired"></textarea>
+        </label>
+      </li>
+    </ul>
+    <legend>What is your EOD experience?</legend>
+    <ul class="Experience">
+      <li>
+        <label for="q00-a1">
+          <input type="radio" id="q00-a1" name="q00" value="Extensive" required> Extensive (>10 years, multiple EOD missions)
+        </label>
+      </li>
+      <li>
+        <label for="q00-a2">
+          <input type="radio" id="q00-a2" name="q00" value="Medium"> Medium (3-10 years, 1-2 EOD mission)
+        </label>
+      </li>
+      <li>
+        <label for="q00-a3">
+          <input type="radio" id="q00-a3" name="q00" value="None"> None (0-2 years, no EOD mission)
+        </label>
+      </li>
+    </ul>
+  </section>
+<div style="border: 2px solid grey; margin-top: 20px;"></div>
+  <section role="region" aria-labelledby="VIRTUAL REALITY">
+    <h1 id="questions">VIRTUAL REALITY</h1>
+      <div class="question-block">
+        <p>1</p>
+        <fieldset class="question" name="question-virtual-one">
+          <legend>Can you imagine using Virtual Reality Glasses for EOD training?</legend>
+          <ul class="answers-list">
+          <li>
+            <label for="qv1-a1">
+              <input type="radio" id="qv1-a1" name="qv1" value="Yes" required> Yes
+            </label>
+          </li>
+          <li>
+            <label for="qv1-a2">
+              <input type="radio" id="qv1-a2" name="qv1" value="No"> No
+            </label>
+          </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="question-block">
+        <p>2</p>
+        <fieldset class="question" name="question-virtual-two">
+          <legend>Do you believe Virtual Reality could change the traditional teaching methods in EOD?</legend>
+          <ul class="answers-list">
+          <li>
+            <label for="qv2-a1">
+              <input type="radio" id="qv2-a1" name="qv2" value="Yes" required> Yes
+            </label>
+          </li>
+          <li>
+            <label for="qv2-a2">
+              <input type="radio" id="qv2-a2" name="qv2" value="No"> No
+            </label>
+          </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="question-block">
+        <p>3</p>
+        <fieldset class="question" name="question-virtual-three">
+          <legend>In which part of the EOD training could Virtual Reality be useful?</legend>
+          <ul class="answers-list">
+          <li>
+            <label for="qv3-a1">
+              <input type="checkbox" id="qv3-a1" name="qv3pract" value="Practical"> Practical
+            </label>
+          </li>
+          <li>
+            <label for="qv3-a2">
+              <input type="checkbox" id="qv3-a2" name="qv3theor" value="Theoretical"> Theoretical
+            </label>
+            </li>
+          <label for="qv3-a3">
+          <textarea style="margin-top: 6px;" name="qv3det" id="qv3-a3" rows="3" cols="60" placeholder="Explain in details" ></textarea>
+          </label>
+          </ul>
+        </fieldset>
+        <p>4</p>
+      <fieldset class="question" name="question-virtual-four">
+        <legend>What parts of theroretical EOD Training could be included or supported by Virtual Reality?</legend>
+        <label for="theoretical">
+        <textarea name="theoretical" id="theoretical" cols="60" rows="3" placeholder="e.g. Stanags, Reports, Videos, etc..."></textarea>
+      </label>
+      </fieldset>
+      </div>
+      <p>5</p>
+      <fieldset class="question" name="question-virtual-four">
+        <legend>What parts of practical EOD Training could be included or supported by Virtual Reality?</legend>
+        <label for="practical">
+        <textarea name="practical" id="practical" cols="60" rows="3" placeholder="e.g. Procedure training, Neutralization process, etc..."></textarea>
+        </label>
+      </fieldset>
+      </div>
+  </section>
+  <button style="height: auto;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 5px;
+  font-weight: bold;">Submit</button>
+  </form>
+</main>
+  </body>
+</html>
